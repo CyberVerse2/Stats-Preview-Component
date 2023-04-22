@@ -1,0 +1,132 @@
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --white-main: hsla(0, 0%, 100%, 0.75);
+  --white-heading: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+main {
+  width: 75%;
+  height: 44rem;
+  background-color: var(--desaturated-blue);
+  display: flex;
+  border-radius: 1.2rem;
+}
+section {
+  width: 50%;
+}
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 25% 25%;
+  mix-blend-mode: overlay;
+}
+p {
+  margin: 3.4rem 0 3rem 0;
+  width: 88%;
+  color: var(--white-heading);
+}
+.heading {
+  font-size: 4rem;
+}
+h1 span {
+  color: var(--soft-violet);
+}
+p,
+h3 {
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+}
+.stats h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--white-main);
+}
+.stats-container {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.section-2 {
+  background-color: var(--soft-violet);
+  border-bottom-right-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+@media screen and (max-width: 1450px) {
+  main {
+    flex-direction: column;
+    max-width: 50%;
+    height: fit-content;
+  }
+  section {
+    width: 100%;
+  }
+  .section-1 {
+    text-align: center;
+    order: 1;
+    padding: 4rem 4rem 6rem 4rem;
+  }
+  p {
+    width: 70%;
+    line-height: 2.25rem;
+    align-self: center;
+    /* margin: 3.4rem 1rem 3rem 1rem; */
+    text-align: center;
+  }
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+    width: 100%;
+  }
+  .stats {
+    margin: 10px;
+  }
+  .stats h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .section-2{
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
