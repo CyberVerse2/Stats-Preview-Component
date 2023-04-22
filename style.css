@@ -87,10 +87,10 @@ h3 {
   border-bottom-right-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
 }
-@media screen and (max-width: 76.8rem) {
+@media screen and (max-width: 37.5rem) {
   main {
     flex-direction: column;
-    min-width: 70%;
+    width: 100%;
     height: fit-content;
   }
   section {
